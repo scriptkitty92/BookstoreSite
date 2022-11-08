@@ -6,26 +6,16 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity // This tells Hibernate to make a table out of this class
-public class User {
+public class Rating {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 
 	private String name;
 
-	private String password;
-
 	private String email;
 
 	private Integer value;
-
-	public String getPassword(){
-		return password;
-	}
-
-	public void setPassword(){
-		this.password = password;
-	}
 
 	public Integer getValue() {
 		return value;
